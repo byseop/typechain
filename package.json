@@ -7,7 +7,12 @@
   "author": "byseop <byseop@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js",
-    "prestart": "tsc"
+    "start": "tsc-watch --onSuccess \" node dist/index.js\" "
+  },
+  "dependencies": {
+    "typescript": "^3.4.3"
+  },
+  "devDependencies": {
+    "tsc-watch": "^2.1.2"
   }
 }
